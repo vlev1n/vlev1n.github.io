@@ -96,17 +96,17 @@
 
 
 
-  <meta name="description" content="在自带输入法模式下，按下ctrl + shift + b，然后输入对应数字">
+  <meta name="description" content="repo嵌套hexo整个项目文件夹和public文件夹是两个repo，hexo d是自动上传public文件夹 显示目录书写时需注意，元数据中的title是一级标题，正文中最高的标题为二级标题 经hexo-blog-encrypt加密后的文章，输入密码之后也无法显示TOC 在主题的_config文件里面，将toc的enable设置为true  蜜汁故障排除删除.deploy_git文件夹并且执行h">
 <meta property="og:type" content="article">
-<meta property="og:title" content="win10输入emoji">
-<meta property="og:url" content="http://blog.xiafeng.co/2019/04/13/win10输入emoji/index.html">
+<meta property="og:title" content="hexo博客搭建常见坑">
+<meta property="og:url" content="http://blog.xiafeng.co/2019/04/30/hexo博客搭建常见坑/index.html">
 <meta property="og:site_name" content="运河水岸">
-<meta property="og:description" content="在自带输入法模式下，按下ctrl + shift + b，然后输入对应数字">
+<meta property="og:description" content="repo嵌套hexo整个项目文件夹和public文件夹是两个repo，hexo d是自动上传public文件夹 显示目录书写时需注意，元数据中的title是一级标题，正文中最高的标题为二级标题 经hexo-blog-encrypt加密后的文章，输入密码之后也无法显示TOC 在主题的_config文件里面，将toc的enable设置为true  蜜汁故障排除删除.deploy_git文件夹并且执行h">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-13T02:32:36.165Z">
+<meta property="og:updated_time" content="2019-04-30T00:22:20.999Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="win10输入emoji">
-<meta name="twitter:description" content="在自带输入法模式下，按下ctrl + shift + b，然后输入对应数字">
+<meta name="twitter:title" content="hexo博客搭建常见坑">
+<meta name="twitter:description" content="repo嵌套hexo整个项目文件夹和public文件夹是两个repo，hexo d是自动上传public文件夹 显示目录书写时需注意，元数据中的title是一级标题，正文中最高的标题为二级标题 经hexo-blog-encrypt加密后的文章，输入密码之后也无法显示TOC 在主题的_config文件里面，将toc的enable设置为true  蜜汁故障排除删除.deploy_git文件夹并且执行h">
 
 
 
@@ -114,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://blog.xiafeng.co/2019/04/13/win10输入emoji/">
+  <link rel="canonical" href="http://blog.xiafeng.co/2019/04/30/hexo博客搭建常见坑/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>win10输入emoji | 运河水岸</title>
+  <title>hexo博客搭建常见坑 | 运河水岸</title>
   
 
 
@@ -293,7 +293,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.xiafeng.co/2019/04/13/win10输入emoji/">
+    <link itemprop="mainEntityOfPage" href="http://blog.xiafeng.co/2019/04/30/hexo博客搭建常见坑/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="vlevin">
@@ -310,7 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">win10输入emoji
+          <h1 class="post-title" itemprop="name headline">hexo博客搭建常见坑
 
               
             
@@ -336,7 +336,7 @@
                 
               
 
-              <time title="创建时间：2019-04-13 10:31:58 / 修改时间：10:32:36" itemprop="dateCreated datePublished" datetime="2019-04-13T10:31:58+08:00">2019-04-13</time>
+              <time title="创建时间：2019-04-30 08:04:12 / 修改时间：08:22:20" itemprop="dateCreated datePublished" datetime="2019-04-30T08:04:12+08:00">2019-04-30</time>
             
 
             
@@ -375,7 +375,19 @@
       
 
       
-        <p>在自带输入法模式下，按下ctrl + shift + b，然后输入对应数字</p>
+        <h2 id="repo嵌套"><a href="#repo嵌套" class="headerlink" title="repo嵌套"></a>repo嵌套</h2><p>hexo整个项目文件夹和public文件夹是两个repo，hexo d是自动上传public文件夹</p>
+<h2 id="显示目录"><a href="#显示目录" class="headerlink" title="显示目录"></a>显示目录</h2><p>书写时需注意，元数据中的title是一级标题，正文中最高的标题为二级标题</p>
+<p>经<code>hexo-blog-encrypt</code>加密后的文章，输入密码之后也无法显示TOC</p>
+<p>在主题的_config文件里面，将toc的enable设置为true </p>
+<h2 id="蜜汁故障排除"><a href="#蜜汁故障排除" class="headerlink" title="蜜汁故障排除"></a>蜜汁故障排除</h2><p>删除<code>.deploy_git</code>文件夹并且执行<code>hexo clean</code>后，再重新执行<code>hexo d</code></p>
+<p>先hexo clean再hexo g，进入public，不用自动部署方式，使用<code>git add .</code>和<code>git commit -m &quot;&quot;</code>、<code>git push origin master</code>最原始的方法不会出错的。最后访问的博客其实是静态文件，所以要访问正常，你提交的其实是public文件下的静态文件</p>
+<h2 id="hexo原生方法插入图片"><a href="#hexo原生方法插入图片" class="headerlink" title="hexo原生方法插入图片"></a>hexo原生方法插入图片</h2><p>修改<code>_config.yml</code>配置文件<code>post_asset_folder</code>项为true</p>
+<p>使用new命令新建文章，或者手动创建与已有博客同名的文件夹</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img 文件名.jpg 注释文字 %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="next主题显示德文"><a href="#next主题显示德文" class="headerlink" title="next主题显示德文"></a>next主题显示德文</h2><p>根目录下的_config文件的language选项默认留空，手动指定即可，语言名在<code>/themes/next/languages</code></p>
+<h2 id="每次部署都要配置域名"><a href="#每次部署都要配置域名" class="headerlink" title="每次部署都要配置域名"></a>每次部署都要配置域名</h2><p>在source文件夹下新建文件，文件名为CNAME，无扩展名，文件内容为自定义域名</p>
+<h2 id="next主题代码高亮无法正常显示"><a href="#next主题代码高亮无法正常显示" class="headerlink" title="next主题代码高亮无法正常显示"></a>next主题代码高亮无法正常显示</h2><p>反三点后面加语言名</p>
+<h2 id="部署时提示deloyer-not-found-git"><a href="#部署时提示deloyer-not-found-git" class="headerlink" title="部署时提示deloyer not found: git"></a>部署时提示deloyer not found: git</h2><p>npm i hexo-deployer-git –S</p>
 
       
     </div>
@@ -406,8 +418,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/13/正则表达式匹配汉字/" rel="next" title="正则表达式匹配汉字">
-                <i class="fa fa-chevron-left"></i> 正则表达式匹配汉字
+              <a href="/2019/04/28/ouc-web-dev需求/" rel="next" title="ouc-web-dev需求">
+                <i class="fa fa-chevron-left"></i> ouc-web-dev需求
               </a>
             
           </div>
@@ -415,10 +427,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/28/pomelo开发日志/" rel="prev" title="pomelo开发日志">
-                pomelo开发日志 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -462,8 +470,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -509,6 +526,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#repo嵌套"><span class="nav-number">1.</span> <span class="nav-text">repo嵌套</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示目录"><span class="nav-number">2.</span> <span class="nav-text">显示目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#蜜汁故障排除"><span class="nav-number">3.</span> <span class="nav-text">蜜汁故障排除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo原生方法插入图片"><span class="nav-number">4.</span> <span class="nav-text">hexo原生方法插入图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next主题显示德文"><span class="nav-number">5.</span> <span class="nav-text">next主题显示德文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#每次部署都要配置域名"><span class="nav-number">6.</span> <span class="nav-text">每次部署都要配置域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next主题代码高亮无法正常显示"><span class="nav-number">7.</span> <span class="nav-text">next主题代码高亮无法正常显示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署时提示deloyer-not-found-git"><span class="nav-number">8.</span> <span class="nav-text">部署时提示deloyer not found: git</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
